@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+            .error{
+                color: red;
+                position: absolute;
+                right: 0;
+                font:10px Helvetica, sans-serif;
+            }
+            #login_form{
+                background-color: #eee;
+                padding: 30px;
+                /*margin: 0 auto;*/
+                width: 540px;
+                /*font: 16px Helvetica, sans-serif;*/
+                border-radius: 10px;
+                margin: 10px auto;
+	            position: relative;
+            }
+            label {
+            	width: 100px;
+                font: 16px Helvetica, sans-serif;
+            	text-align: left;
+	        }
+            div.single-field {
+	            padding: 10px;
+	            position: relative;
+	        }
+            .textbox{
+                position: absolute;
+                 
+                right: 0;
+                width: 300px;
+            }
+            .button{
+                
+                width: 200px;
+                position: absolute;
+                left:200px;
+                
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>User Signup</h1>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
